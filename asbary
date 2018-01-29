@@ -1,0 +1,35 @@
+[assc@4613-aalinone-asscdesktop modeM0]$ fthedit 
+Input file name [AS1T01_112T01_9000000406cztM0_level2_quad_clean_mod.evt[0]] AS1T01_112T01_9000000406cztM0_level2_quad_clean_mod.evt[1]
+Keyword name [TSTART] 
+add, delete, replace, or deleteall  (a|d|r|add|delete|replace|deleteall) [add] 
+Value / comment string [197100070] 
+[assc@4613-aalinone-asscdesktop modeM0]$ fthedit 
+Input file name [AS1T01_112T01_9000000406cztM0_level2_quad_clean_mod.evt[1]] AS1T01_112T01_9000000406cztM0_level2_quad_clean_mod.evt[2]
+Keyword name [TSTART] 
+add, delete, replace, or deleteall  (a|d|r|add|delete|replace|deleteall) [add] 
+Value / comment string [197100070] 
+[assc@4613-aalinone-asscdesktop modeM0]$ fthedit 
+Input file name [AS1T01_112T01_9000000406cztM0_level2_quad_clean_mod.evt[2]] AS1T01_112T01_9000000406cztM0_level2_quad_clean_mod.evt[3]
+Keyword name [TSTART] 
+add, delete, replace, or deleteall  (a|d|r|add|delete|replace|deleteall) [add] 
+Value / comment string [197100070] 
+[assc@4613-aalinone-asscdesktop modeM0]$ fthedit 
+Input file name [AS1T01_112T01_9000000406cztM0_level2_quad_clean_mod.evt[3]] AS1T01_112T01_9000000406cztM0_level2_quad_clean_mod.evt[4]
+Keyword name [TSTART] 
+add, delete, replace, or deleteall  (a|d|r|add|delete|replace|deleteall) [add] 
+Value / comment string [197100070]
+#####################################
+[assc@4613-aalinone-asscdesktop modeM0]$ heainit
+[assc@4613-aalinone-asscdesktop modeM0]$ fkeyprint AS1T01_112T01_9000000406cztM0_level2_quad_clean_mod.evt TSTART
+
+
+
+####################################
+#command as1bary execute
+
+
+
+as1bary -i ../aux/aux1/AS1T01_112T01_9000000406czt_level2.orb -f AS1T01_112T01_9000000406cztM0_level2_quad_clean_mod.evt -o AS1T01_112T01_9000000406cztM0_level2_quad_clean_mod_bary.evt -ra 83.63308 -dec 22.01446 -ref FK5
+##########################T0 check header time and calculate TAU,PHI,PHASE
+#############################save it then histogram generate using PHASE
+fv AS1T01_112T01_9000000406cztM0_level2_quad_clean_mod_bary.evt
